@@ -1,0 +1,37 @@
+{
+  "name": "tokens-ci-desktop",
+  "version": "1.0.0",
+  "description": "Tokens CI Desktop - One-click submit for tokens.ci",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win dir",
+    "build:dir": "electron-builder --win dir",
+    "build:win": "electron-builder --win portable",
+    "package": "electron-packager . TokensCIDesktop --platform=win32 --arch=x64 --out=dist --overwrite --ignore=\"node_modules/electron\""
+  },
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^25.0.0",
+    "electron-packager": "^17.1.2"
+  },
+  "build": {
+    "appId": "com.tokensci.desktop",
+    "productName": "TokensCI Desktop",
+    "artifactName": "TokensCI-Desktop-${version}.exe",
+    "win": {
+      "target": "portable",
+      "icon": "build/icon.ico",
+      "signAndEditExecutable": false
+    },
+    "portable": {
+      "artifactName": "TokensCI-Desktop-${version}.exe"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "renderer/**/*",
+      "package.json"
+    ]
+  }
+}
