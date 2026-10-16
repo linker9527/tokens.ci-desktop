@@ -26,3 +26,7 @@ npm start
 └── build/
     └── installer.nsi    # NSIS 安装包脚本
 ```
+
+## 资金消耗
+
+[![Tokens Cost](https://tokens.ci/api/embed/linker9527/svg?sort=cost&color=halloween&graph=1&today=1&rank=percent&tokens=full&cost=full)](https://tokens.ci/u/linker9527)
