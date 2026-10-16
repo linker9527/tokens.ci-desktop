@@ -2,6 +2,10 @@
 
 桌面版 tokens.ci 提交工具 — 打开 tokens.ci，悬浮 ⬆️ Submit 按钮，一键提交 tokens 数据。
 
+## 下载
+
+[⬇️ 下载最新安装包](https://github.com/linker9527/tokens.ci-desktop/releases/latest) — Windows x64 安装包，安装后桌面自动生成快捷方式。
+
 ## 运行
 
 ```bash
